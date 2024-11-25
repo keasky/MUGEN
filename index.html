@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>おしゃれなチャットアプリ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f8e0; /* 明るい緑の背景 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .chat-container {
+            width: 400px;
+            height: 600px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        .chat-header {
+            background-color: #4caf50; /* 濃い緑 */
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .chat-messages {
+            flex-grow: 1;
+            padding: 15px;
+            overflow-y: auto;
+            background-color: #f1f9f1; /* 薄い緑 */
+        }
+        .message {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 8px;
+            max-width: 80%;
+        }
+        .message.sender {
+            background-color: #b2dfdb; /* 明るい緑 */
+            align-self: flex-end;
+            text-align: right;
+        }
+        .message.receiver {
+            background-color: #c8e6c9; /* 優しい緑 */
+            align-self: flex-start;
+            text-align: left;
+        }
+        .chat-input {
+            display: flex;
+            padding: 10px;
+            background-color: #ffffff;
+            border-top: 1px solid #ddd;
+        }
+        .chat-input input {
+            flex-grow: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            outline: none;
+            background-color: #e8f5e9; /* 入力欄も薄い緑 */
+        }
+        .chat-input button {
+            background-color: #66bb6a; /* 鮮やかな緑 */
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            margin-left: 10px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .chat-input button:hover {
+            background-color: #388e3c; /* 濃い緑に変化 */
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">Chat App</div>
+        <div class="chat-messages">
+            <div class="message sender">こんにちは！</div>
+            <div class="message receiver">こんにちは！元気ですか？</div>
+            <!-- 他のメッセージを追加 -->
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="メッセージを入力...">
+            <button>送信</button>
+        </div>
+    </div>
+</body>
+</html>
